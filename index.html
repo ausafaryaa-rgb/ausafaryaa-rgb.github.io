@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Ausaf Aryadiputra | AI Prompt Engineer</title>
+
+    <meta name="description"
+        content="Portfolio of Muhammad Ausaf Aryadiputra — AI Prompting, ChatGPT, AI-assisted research, content creation and web development.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13, 17, 23, 0.95);
+            border-bottom: 1px solid #30363d;
+        }
+
+        .nav-inner {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #58a6ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #8b949e;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #58a6ff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid #30363d;
+            border-radius: 20px;
+            color: #58a6ff;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #58a6ff;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #8b949e;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #238636;
+            border-color: #238636;
+        }
+
+        .btn-primary:hover {
+            background: #2ea043;
+        }
+
+        .btn-secondary:hover {
+            border-color: #58a6ff;
+            color: #58a6ff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 90px 0;
+            border-top: 1px solid #21262d;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #8b949e;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 800px;
+            color: #8b949e;
+            font-size: 17px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 15px;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            background: #161b22;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        .project-number {
+            color: #58a6ff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project h3 {
+            margin: 12px 0;
+            font-size: 21px;
+        }
+
+        .project p {
+            color: #8b949e;
+            margin-bottom: 18px;
+        }
+
+        .project-link {
+            color: #58a6ff;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 35px;
+            max-width: 700px;
+        }
+
+        .contact-box p {
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid #21262d;
+            padding: 30px 0;
+            text-align: center;
+            color: #8b949e;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 800px) {
+            .nav-links {
+                display: none;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-inner">
+            <div class="logo">
+                Ausaf<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="badge">
+                    AI Prompting • ChatGPT • Digital Content
+                </div>
+
+                <h1>
+                    Muhammad Ausaf<br>
+                    <span>AI Prompt Engineer</span>
+                </h1>
+
+                <p>
+                    Indonesian ChatGPT user focused on prompt engineering,
+                    AI-assisted research, content creation, and web development.
+                </p>
+
+                <div class="buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+
+            <h2 class="section-title">About Me</h2>
+
+            <p class="section-subtitle">
+                AI-assisted problem solving and creative technology.
+            </p>
+
+            <div class="about">
+                <p>
+                    I am an Indonesian AI and ChatGPT user interested in
+                    prompt engineering, generative AI, digital content,
+                    research, and technology.
+                </p>
+
+                <br>
+
+                <p>
+                    I use ChatGPT as an AI-assisted tool for research,
+                    writing, programming, brainstorming, technical
+                    troubleshooting, and content development.
+                </p>
+
+                <br>
+
+                <p>
+                    My approach focuses on creating structured prompts,
+                    refining AI outputs, providing clear context and
+                    requirements, and reviewing generated results before use.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+
+            <h2 class="section-title">Skills</h2>
+
+            <p class="section-subtitle">
+                Tools and capabilities I use in AI-assisted workflows.
+            </p>
+
+            <div class="skills">
+
+                <div class="skill">ChatGPT</div>
+                <div class="skill">Prompt Engineering</div>
+                <div class="skill">AI Content Generation</div>
+                <div class="skill">AI-Assisted Writing</div>
+                <div class="skill">AI-Assisted Research</div>
+                <div class="skill">Prompt Refinement</div>
+                <div class="skill">AI Output Evaluation</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Script Writing</div>
+                <div class="skill">Content Ideation</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+
+            <h2 class="section-title">Selected Projects</h2>
+
+            <p class="section-subtitle">
+                Personal and academic projects demonstrating AI-assisted workflows.
+            </p>
+
+            <div class="projects">
+
+                <!-- PROJECT 1 -->
+                <div class="project">
+                    <div class="project-number">PROJECT 01</div>
+
+                    <h3>
+                        AI Prompt Engineering & Content
+                    </h3>
+
+                    <p>
+                        Developed structured prompts for short-form content,
+                        including hooks, narration, scripts, captions,
+                        and creative concepts.
+                    </p>
+
+                    <a href="#contact" class="project-link">
+                        View Case Study →
+                    </a>
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="project">
+                    <div class="project-number">PROJECT 02</div>
+
+                    <h3>
+                        AI-Assisted Academic Research
+                    </h3>
+
+                    <p>
+                        Used ChatGPT to support research, academic writing,
+                        information structuring, methodology development,
+                        and presentation preparation.
+                    </p>
+
+                    <a href="#contact" class="project-link">
+                        View Case Study →
+                    </a>
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class="project">
+                    <div class="project-number">PROJECT 03</div>
+
+                    <h3>
+                        AI-Assisted Web Development
+                    </h3>
+
+                    <p>
+                        Used ChatGPT as a coding assistant for HTML, CSS,
+                        JavaScript, website debugging, and technical
+                        problem solving.
+                    </p>
+
+                    <a href="#contact" class="project-link">
+                        View Case Study →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+
+            <h2 class="section-title">Let's Connect</h2>
+
+            <p class="section-subtitle">
+                Interested in AI prompting, content creation, and
+                AI-assisted digital workflows.
+            </p>
+
+            <div class="contact-box">
+
+                <p>
+                    Email:
+                    <strong>ausafaryaa@gmail.com</strong>
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        href="mailto:ausafaryaa@gmail.com"
+                        class="btn btn-primary">
+                        Email Me
+                    </a>
+
+                    <a
+                        href="https://github.com/ausafaryaa-rgb"
+                        target="_blank"
+                        class="btn btn-secondary">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            © 2026 Muhammad Ausaf Aryadiputra.
+            Built with HTML, CSS & AI-assisted development.
+        </div>
+    </footer>
+
+</body>
+</html>
